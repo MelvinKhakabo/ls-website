@@ -21,7 +21,7 @@ export default function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4">
       <nav
         className={`mx-auto flex max-w-6xl items-center justify-between rounded-full border border-white/50 px-5 backdrop-blur-xl transition-all duration-300 ${
-          scrolled ? 'bg-white/75 py-2 shadow-lg shadow-navy/10' : 'bg-white/55 py-3'
+          scrolled ? 'bg-white/75 py-2 shadow-lg shadow-ink/10' : 'bg-white/55 py-3'
         }`}
       >
         <Link to="/" onClick={close} className="font-display text-lg font-bold tracking-tight">
@@ -34,17 +34,17 @@ export default function Navbar() {
           {mainNav.map((item) =>
             'children' in item ? (
               <li key={item.label} className="group relative">
-                <button className="flex items-center gap-1 transition hover:text-navy">
+                <button className="flex items-center gap-1 transition hover:text-ink">
                   {item.label}
                   <ChevronDown size={14} className="transition group-hover:rotate-180" />
                 </button>
                 <div className="invisible absolute left-1/2 top-full -translate-x-1/2 pt-4 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
-                  <div className="min-w-56 rounded-2xl border border-line bg-white/90 p-2 shadow-xl shadow-navy/10 backdrop-blur-xl">
+                  <div className="min-w-56 rounded-2xl border border-line bg-white/90 p-2 shadow-xl shadow-ink/10 backdrop-blur-xl">
                     {item.children.map((c) => (
                       <SmartLink
                         key={c.label}
                         item={c}
-                        className="block rounded-xl px-4 py-2.5 text-navy transition hover:bg-ivory hover:text-terracotta"
+                        className="block rounded-xl px-4 py-2.5 text-ink transition hover:bg-ivory hover:text-terracotta"
                       />
                     ))}
                   </div>
@@ -52,7 +52,7 @@ export default function Navbar() {
               </li>
             ) : (
               <li key={item.label}>
-                <SmartLink item={item} className="transition hover:text-navy" />
+                <SmartLink item={item} className="transition hover:text-ink" />
               </li>
             ),
           )}
@@ -72,7 +72,7 @@ export default function Navbar() {
 
       {/* Mobile panel */}
       {open && (
-        <div className="mx-auto mt-2 max-w-6xl rounded-3xl border border-white/50 bg-white/85 p-4 shadow-xl shadow-navy/10 backdrop-blur-xl lg:hidden">
+        <div className="mx-auto mt-2 max-w-6xl rounded-3xl border border-white/50 bg-white/85 p-4 shadow-xl shadow-ink/10 backdrop-blur-xl lg:hidden">
           {mainNav.map((item) =>
             'children' in item ? (
               <div key={item.label} className="py-2">

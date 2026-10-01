@@ -9,7 +9,6 @@ import Pumac from '@/pages/Pumac'
 import Events from '@/pages/Events'
 import Team from '@/pages/Team'
 import Locations from '@/pages/Locations'
-import Admissions from '@/pages/Admissions'
 import Careers from '@/pages/Careers'
 import Contact from '@/pages/Contact'
 import Policies from '@/pages/Policies'
@@ -30,7 +29,6 @@ export const router = createBrowserRouter([
       { path: 'events', element: <Events /> },
       { path: 'team', element: <Team /> },
       { path: 'locations', element: <Locations /> },
-      { path: 'admissions', element: <Admissions /> },
       { path: 'careers', element: <Careers /> },
       { path: 'contact', element: <Contact /> },
       { path: 'policies', element: <Policies /> },

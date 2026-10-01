@@ -19,7 +19,6 @@ export const mainNav: NavItem[] = [
       { label: 'All Programs', to: '/programs' },
       { label: 'PUMaC Africa', to: '/pumac-africa' },
       { label: 'Holiday Camps', to: brand.links.holidayCamps, external: true },
-      { label: 'Admissions', to: '/admissions' },
     ],
   },
   { label: 'Events', to: '/events' },
@@ -44,7 +43,6 @@ export const footerNav: { title: string; links: LinkItem[] }[] = [
       { label: 'Hard Skills', to: '/programs' },
       { label: 'Soft Skills', to: '/programs' },
       { label: 'Holiday Camps', to: brand.links.holidayCamps, external: true },
-      { label: 'Admissions', to: '/admissions' },
     ],
   },
   {

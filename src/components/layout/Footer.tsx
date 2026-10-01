@@ -5,7 +5,7 @@ import SmartLink from '@/components/ui/SmartLink'
 
 export default function Footer() {
   return (
-    <footer className="bg-navy text-white/70">
+    <footer className="bg-ink text-white/70">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
         <div>
           <Link to="/" className="font-display text-xl font-bold text-white">

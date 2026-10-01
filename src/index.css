@@ -4,7 +4,7 @@
 @layer base {
   html { scroll-behavior: smooth; }
   body {
-    @apply bg-ivory font-sans text-navy antialiased;
+    @apply bg-ivory font-sans text-ink antialiased;
   }
   h1, h2, h3, h4 { @apply font-display; }
 }
